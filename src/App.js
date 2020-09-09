@@ -39,9 +39,11 @@ function App() {
       <div className="title">Quiz</div>
       
     
-     {(typeof questionBank != "undefined") && questionBank.map(question =>
+     {(typeof questionBank != "undefined") && 
+     response < 5 &&
+     questionBank.map(question =>
        (<QuestionBox question={question.question} options={question.answers} key={question.questionId} 
-       selected={checkAnswer(answer,correct)}/>))}
+       selected={answer => checkAnswer(answer,question.correct)}/>))}
 
        
 
