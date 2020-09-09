@@ -1,4 +1,4 @@
-The topics covered in this APP are listed below
+## The topics covered in this APP are listed below
 ▪️ Components in React
 ▪️ Types of Components & Their Uses
 ▪️ Key Features of React Components 
