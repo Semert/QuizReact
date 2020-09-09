@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "./assets/style.css"
 import quizService from "./quizService/index"
-import Deneme from './components/deneme';
 import QuestionBox from "./components/QuestionBox";
 import Result from './components/Result';
 
@@ -13,10 +12,7 @@ function App() {
 
   useEffect(()=>{
     getQuestions()
-
   },[]);
-
- 
 
   const getQuestions = () =>
   {
@@ -45,15 +41,11 @@ function App() {
   return (
     <div className="container">
       <div className="title">Quiz</div>
-      
-    
      {(typeof questionBank != "undefined") && 
      response < 5 &&
      questionBank.map(question =>
        (<QuestionBox question={question.question} options={question.answers} key={question.questionId} 
        selected={answer => checkAnswer(answer,question.correct)}/>))}
-        
-       
         {response === 5 ? (<Result score={score} playAgain={playAgain} />) : null}
     </div>
   );
