@@ -1,4 +1,11 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The topics covered in this APP are listed below
+▪️ Components in React
+▪️ Types of Components & Their Uses
+▪️ Key Features of React Components 
+▪️ State Variables
+▪️ Lifecycle Methods
+▪️ Hooks API
+▪️ How to Use Props
 
 ## Available Scripts
 
