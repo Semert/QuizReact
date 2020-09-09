@@ -3,6 +3,7 @@ import "./assets/style.css"
 import quizService from "./quizService/index"
 import Deneme from './components/deneme';
 import QuestionBox from "./components/QuestionBox";
+import Result from './components/Result';
 
 
 function App() {
@@ -32,6 +33,13 @@ function App() {
     setResponse(response < 5 ? response + 1 : 5)
   }
 
+  const playAgain = () =>
+  {
+    getQuestions();
+    setScore(0)
+    setResponse(0)
+  }
+
   console.log(questionBank,"out scope")
 
   return (
@@ -44,9 +52,9 @@ function App() {
      questionBank.map(question =>
        (<QuestionBox question={question.question} options={question.answers} key={question.questionId} 
        selected={answer => checkAnswer(answer,question.correct)}/>))}
-
+        
        
-        {response === 5 ? (<h2>{score}</h2>) : null}
+        {response === 5 ? (<Result score={score} playAgain={playAgain} />) : null}
     </div>
   );
 }
