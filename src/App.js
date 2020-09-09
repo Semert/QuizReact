@@ -28,14 +28,13 @@ function App() {
     }
     setResponse(response < 5 ? response + 1 : 5)
   }
-
+  
   const playAgain = () =>
   {
     getQuestions();
     setScore(0)
     setResponse(0)
   }
-
 
   return (
     <div className="container">
