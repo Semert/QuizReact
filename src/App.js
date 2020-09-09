@@ -36,7 +36,6 @@ function App() {
     setResponse(0)
   }
 
-  console.log(questionBank,"out scope")
 
   return (
     <div className="container">
