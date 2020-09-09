@@ -1,3 +1,7 @@
+![Adsız](https://user-images.githubusercontent.com/44974863/92621113-1521ac80-f2cc-11ea-9270-91ec75e5b5eb.png)
+![Adsız1](https://user-images.githubusercontent.com/44974863/92621125-16eb7000-f2cc-11ea-8535-708721c9717b.png)
+![Adsız2](https://user-images.githubusercontent.com/44974863/92621132-18b53380-f2cc-11ea-802d-a9258fab7330.png)
+
 ## The topics covered in this APP are listed below
 ▪️ Components in React
 ▪️ Types of Components & Their Uses
