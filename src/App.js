@@ -7,6 +7,8 @@ import QuestionBox from "./components/QuestionBox";
 
 function App() {
   const [questionBank,setQuestionBank] = useState()
+  const [score,setScore] = useState(0)
+  const [response,setResponse] = useState(0)
 
   useEffect(()=>{
     getQuestions()
@@ -22,6 +24,13 @@ function App() {
     });
   }
 
+  const checkAnswer = (answer,correct) => {
+    if (answer === correct)
+    {
+      setScore(score + 1)
+    }
+    setResponse(response < 5 ? response + 1 : 5)
+  }
 
   console.log(questionBank,"out scope")
 
@@ -31,7 +40,8 @@ function App() {
       
     
      {(typeof questionBank != "undefined") && questionBank.map(question =>
-       (<QuestionBox question={question.question} options={question.answers} key={question.questionId}/>))}
+       (<QuestionBox question={question.question} options={question.answers} key={question.questionId} 
+       selected={checkAnswer(answer,correct)}/>))}
 
        
 
