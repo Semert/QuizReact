@@ -46,7 +46,7 @@ function App() {
        selected={answer => checkAnswer(answer,question.correct)}/>))}
 
        
-
+        {response === 5 ? (<h2>{score}</h2>) : null}
     </div>
   );
 }
